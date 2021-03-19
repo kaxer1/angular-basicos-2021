@@ -1,0 +1,24 @@
+<h3>Agregar <small> {{nuevo.nombre}} </small></h3>
+<hr>
+<!-- () emitir o escuchar un evento -->
+<!-- [] para una propiedad -->
+<form (ngSubmit)="agregar()">
+    <input 
+        type="text" 
+        placeholder="Nombre"
+        name="nombre"
+        [(ngModel)]="nuevo.nombre"
+        >
+        <!-- [(ngModel)] === Concepto de to way data baiding,
+                tanto emite como recibe eventos o propiedades -->
+
+        <!-- [value]="nuevo.nombre"
+        (input)="cambiarNombre($event)" -->
+    <input 
+        type="number" 
+        placeholder="Poder"
+        name="poder"
+        [(ngModel)]="nuevo.poder"
+        >
+    <button type="submit">Agregar</button>
+</form>

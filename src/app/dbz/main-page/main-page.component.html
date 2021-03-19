@@ -1,0 +1,26 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+<div class="row">
+    <div class="col">
+        <!-- CODIGO REFACTORIZADO -->
+        <app-personajes></app-personajes>
+
+
+
+        <!-- deteccion de cambios de angular -->
+        <!-- // ESTE CODIGO ES PARA FINES EDUCATIVOS
+            <app-personajes [data]="personajes"></app-personajes>  -->
+    </div>
+    <div class="col">
+        <!-- CODIGO REFACTORIZADO -->
+        <app-agregar [data_nuevo]="nuevo"></app-agregar>
+
+
+
+        <!-- ESTE CODIGO ES PARA FINES EDUCATIVOS 
+            <app-agregar
+            [data_nuevo]="nuevo"
+            (onNuevoPersonaje)="agregarNuevoPersonaje($event)"
+        ></app-agregar> -->
+    </div>
+</div>
